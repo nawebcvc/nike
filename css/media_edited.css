@@ -1,0 +1,115 @@
+@media(max-width: 1200px) {
+
+    /* все что начинается с собачкой @ называется правилой  */
+    .container {
+        max-width: 960px;
+    }
+
+    /* это как условный оператор в питоне, но называется правилой и имеет другую структуру/синтаксис: при максимальной ширине в 1200пкс класс .nav будет имееть задний фон красный */
+}
+
+/* при адаптации сайта к различным устройствам (или точнее к разным разрешениям экрана) применяется точки останова (это то что в скобке после media (max-width: 1200px)) см https://bootstrap-4.ru/docs/5.2/layout/grid/ от фраймворка bootstrap
+не обязательно адаптировать страницы для каждого телефона с маленькими разрешениями экрана, достаточно сделать адаптацию до 320px (если до 320px у вас ничего не сломалось, то следует остановится на этом!)  */
+
+@media(max-width: 992px) {
+    .container {
+        max-width: 720px;
+        flex-direction: column;
+    }
+
+    .nav {
+        padding: 20px 0 20px 0;
+    }
+
+    .logo {
+        height: 25px;
+        width: 100%;
+    }
+
+    .nav {
+        height: auto;
+    }
+
+    .nav__menu {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .nav__menu li {
+        padding: 10px;
+    }
+
+    .banner {
+        min-height: auto;
+        height: 500px;
+    }
+
+    .cards__content {
+        flex-direction: column;
+        align-items: center;
+        row-gap: 30px;
+        transform: translateY(0);
+        padding: 20px 0;
+    }
+
+    .cards_left {
+        min-width: 700px;
+        width: 100%;
+        max-width: 689px;
+
+    }
+
+    .cards_right {
+        justify-content: center;
+        max-width: 540px;
+        width: 100%;
+    }
+
+    .cards__left-img {
+        width: 100%;
+    }
+
+    .card {
+        max-width: 712px;
+        width: 100%;
+        min-height: 460px;
+        justify-content: space-evenly;
+    }
+
+    .card__box {
+        width: 250px;
+        height: 250px;
+    }
+
+    .footer .container {
+        flex-wrap: wrap;
+        justify-content: center;
+        row-gap: 30px;
+        column-gap: 30px;
+    }
+}
+
+@media(max-width: 768px) {
+    .container {
+        max-width: 540px;
+    }
+}
+
+@media(max-width: 576px) {
+    .container {
+        max-width: 100%;
+    }
+
+    .banner {
+        height: 400px;
+    }
+
+    .card__box {
+        max-width: 200px;
+        width: 100%;
+        max-height: 200px;
+        height: 100%;
+    }
+}
+
+/* ВЫШЕ ПЕРЕЧИСЛЕННЫЕ СВОЙСТВА ПОДХОДЯТ К СМАРТФОНАМ ЧЬИ ЭКРАННЫЕ РАЗРЕШЕНИЯ ПРИБЛИЗИТЕЛЬНО 396:707 пикс (мой смартфон был таким) */
