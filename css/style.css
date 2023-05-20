@@ -107,14 +107,13 @@ body {
 
 .cards__left {
     display: flex;
-    flex-direction: column; /* fxdc */
-    align-items: flex-start; /* aifs */
-    max-width: 540px; /* maw540 */
+    flex-direction: column; 
+    align-items: flex-start; 
+    max-width: 540px;
     width: 100%;
     padding: 15px; 
     background: #fff;
     border-radius: 6px;
-    /* margin-top: -37px; */
 }
 
 .cards__left-img {
@@ -153,7 +152,7 @@ body {
 .card__box {
     width: 80px;
     height: 80px;
-    border-radius: 50%; /* bdrs50p */
+    border-radius: 50%;
     border: 2px solid #D47300;
     margin-bottom: 15px;
 }
@@ -182,11 +181,9 @@ body {
 
 .cards__right {
     display: flex;
-    flex-wrap: wrap; /* fxww */
-    /* gap: 30px; */ /*gap - дает отсуп и по горизонтали и по вертикали (в отличии от justify-content: space-between; который дает только по горизонтали) */
+    flex-wrap: wrap; 
     column-gap: 30px;
     row-gap: 30px;
-    /* gap - не поддерживается некоторыми браузерами (напр: safari) и желательно вместо него использовать column-gap и row-gap */
 }
 
 .footer {
